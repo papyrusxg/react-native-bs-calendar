@@ -1,1 +1,1 @@
-export { multiply } from './multiply';
+export { Calendar } from "./components/Calendar";
