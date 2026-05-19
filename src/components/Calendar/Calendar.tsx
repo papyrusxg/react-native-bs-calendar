@@ -9,6 +9,8 @@ export const Calendar = () => {
   const flatListRef = useRef<FlatList | null>(null);
   const { width } = useWindowDimensions();
 
+  console.log("test");
+
   const renderCalendarItem = ({ item }: { item: NepaliDatesType }) => {
     return (
       <View style={[calendarStyles.slide, { width }]}>
