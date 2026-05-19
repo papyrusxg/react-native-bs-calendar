@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { View, Text, FlatList, useWindowDimensions } from "react-native";
 
 import { NEPALI_DATES } from "../../constants/dates";
@@ -6,7 +6,7 @@ import type { NepaliDatesType } from "../../types";
 import { calendarStyles } from "./styles";
 
 export const Calendar = () => {
-  const flatListRef = useRef<FlatList>(null);
+  const flatListRef = useRef<FlatList | null>(null);
   const { width } = useWindowDimensions();
 
   const renderCalendarItem = ({ item }: { item: NepaliDatesType }) => {
